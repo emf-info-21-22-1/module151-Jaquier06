@@ -11,9 +11,20 @@
         <td>ID</td>
         <td>Club</td>
       </tr>
+      
       <?php
         require('ctrl.php');
-        // A compléter....
+        $lst = getEquipes();
+        $id = 0;
+        foreach ($lst as $lst) {
+          ?>
+          <tr>
+              <td><?php echo $id; ?></td>
+              <td><?php echo $lst; ?></td>
+          </tr>
+          <?php
+          $id = $id +1;
+      }
       ?>
       </table>
     </div>
