@@ -1,4 +1,5 @@
-var BASE_URL = "http://localhost:8082/server/index.php";
+//var BASE_URL = "http://localhost:8082/server/index.php";
+var BASE_URL = "https://jaquierl.emf-informatique.ch/151/server/index.php";
 
 function checkUser(user, pass, successCallback, errorCallback) {
     $.ajax({
