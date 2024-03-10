@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="helpers/jquery-1.10.2.min.js"></script>
+  <script src="storage/StorageItems.js"></script>
+  <script src="ctrl/ctrlRegister.js"></script>
+  <script src="wrk/wrk.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enregistrement</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <button class="cancel-btn" onclick="window.location.href='login.html'">Cancel</button>
+    <form class="register-form">
+      <input id="user" type="text" placeholder="Username">
+      <input id="pass" type="password" placeholder="Password">
+      <input id="confpass" type="password" placeholder="Confirm Password">
+    </form>
+    <button class="register-enter-btn"
+      onclick="registerCtrl(document.getElementById('user').value, document.getElementById('pass').value, document.getElementById('confpass').value,)">Submit</button>
+  </div>
+</body>
+
+</html>

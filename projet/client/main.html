@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="helpers/jquery-1.10.2.min.js"></script>
+  <script src="wrk/wrk.js"></script>
+  <script src="ctrl/ctrlMain.js"></script>
+  <script src="ctrl/ctrlNewCar.js"></script>
+  <script src="ctrl/ctrlGarage.js"></script>
+  <script src="storage/StorageItems.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>SHOP</h1>
+    <h2 id="username"></h2>
+    <h2 id="money"></h2>
+    <button class="nav-btn" onclick="garage()">Garage</button>
+    <button class="nav-btn" onclick="newCar()">New Car</button>
+    <button class="nav-btn" onclick="logoutCtrl()">Logout</button>
+    <br>
+    <div class="vehicle-grid" id="vehicleGrid">
+    </div>
+  </div>
+</body>
+
+</html>

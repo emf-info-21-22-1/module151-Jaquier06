@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="helpers/jquery-1.10.2.min.js"></script>
+  <script src="storage/StorageItems.js"></script>
+  <script src="ctrl/ctrlNewCar.js"></script>
+  <script src="wrk/wrk.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nouvelle Voiture</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>NEW CAR</h1>
+    <button class="nav-btn" onclick="window.location.href='main.html'">Accueil</button>
+    <br>
+    <select id="brandList">
+    </select>
+    <input type="text" placeholder="Modèle" id="model">
+    <input type="text" placeholder="Prix" id="price">
+    <br>
+    <button class="buy-btn" id="newCarBtn" onclick="validate()">OK</button>
+  </div>
+</body>
+
+</html>

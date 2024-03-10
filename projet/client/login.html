@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="helpers/jquery-1.10.2.min.js"></script>
+  <script src="storage/StorageItems.js"></script>
+  <script src="ctrl/ctrlLogin.js"></script>
+  <script src="ctrl/ctrlMain.js"></script>
+  <script src="wrk/wrk.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <button class="cancel-btn" onclick="window.location.href='index.html'">Cancel</button>
+    <br>
+    <form class="login-form">
+      <input id="user" type="text" placeholder="Username">
+      <input id="pass" type="password" placeholder="Password">
+    </form>
+    <button class="login-btn"
+      onclick="loginCtrl(document.getElementById('user').value, document.getElementById('pass').value)">Login</button>
+    <button class="register-btn" onclick="window.location.href='register.html'">Register</button>
+  </div>
+
+</body>
+
+</html>
