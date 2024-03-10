@@ -1,5 +1,6 @@
 <?php
 header('Access-Control-Allow-Origin: *');
+
 // LOCAL :
 //header('Access-Control-Allow-Origin: http://localhost:8080');
 
