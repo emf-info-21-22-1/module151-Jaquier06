@@ -1,6 +1,11 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Origin: http://localhost:8080');
+// LOCAL :
+//header('Access-Control-Allow-Origin: http://localhost:8080');
+
+// ONLINE :
+header('Access-Control-Allow-Origin: https://jaquierl.emf-informatique.ch/151/client/index.html');
+
 header('Access-Control-Allow-Credentials: true');
 include_once('ctrl/ctrlBrand.php');
 include_once('ctrl/ctrlCar.php');
